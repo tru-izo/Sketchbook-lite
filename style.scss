@@ -1,0 +1,44 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+canvas {
+  //   background-color: #fff;
+  border: 1px solid #7272f1;
+}
+
+.tools {
+  background-image: linear-gradient(to right, rgb(139, 139, 248), rgb(61, 61, 247));
+  display: flex;
+  width: 802px;
+  padding: 10px;
+  & > * {
+    background-color: #fff;
+    border: none;
+    @include flex-center();
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+    width: 50px;
+    &:nth-last-child(2) {
+      margin-left: auto;
+    }
+  }
+}
