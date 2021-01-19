@@ -56,20 +56,21 @@ function drawLine(x1, y1, x2, y2) {
   ctx.stroke();
 }
 
-function updateSizeOnScreen(){
+function updateSizeOnScreen() {
   sizeEl.innerText = size;
 }
 
 //btn event listeners
-colorEl.addEventListener("change", (e) => color = e.target.value);
+colorEl.addEventListener("change", (e) => (color = e.target.value));
+clearBtn.addEventListener("click", () => ctx.clearRect(0, 0, canvas.width, canvas.height));
 
-increaseFont.addEventListener('click', () =>{
-  size += 2
-  if(size > 50){
-    size = 50
+increaseFont.addEventListener("click", () => {
+  size += 2;
+  if (size > 50) {
+    size = 50;
   }
   updateSizeOnScreen();
-})
+});
 
 decreaseFont.addEventListener("click", () => {
   size -= 2;
@@ -78,3 +79,5 @@ decreaseFont.addEventListener("click", () => {
   }
   updateSizeOnScreen();
 });
+
+

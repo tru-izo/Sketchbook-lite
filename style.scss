@@ -14,20 +14,16 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgb(248, 229, 212);
 }
 
 canvas {
-  //   background-color: #fff;
+  background-color: #fff;
   border: 1px solid #f7783d;
 }
 
 .tools {
-  background-image: linear-gradient(
-    to right,
-    #f8bc8b,
-    #f7783d
-  );
+  background-image: linear-gradient(to right, #f8bc8b, #f7783d);
   display: flex;
   width: 802px;
   padding: 10px;
@@ -46,3 +42,4 @@ canvas {
     }
   }
 }
+
