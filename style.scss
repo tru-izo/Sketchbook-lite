@@ -23,7 +23,11 @@ canvas {
 }
 
 .tools {
-  background-image: linear-gradient(to right, rgb(139, 139, 248), rgb(61, 61, 247));
+  background-image: linear-gradient(
+    to right,
+    rgb(139, 139, 248),
+    rgb(61, 61, 247)
+  );
   display: flex;
   width: 802px;
   padding: 10px;
@@ -37,7 +41,7 @@ canvas {
     padding: 5px;
     height: 30px;
     width: 50px;
-    &:nth-last-child(2) {
+    &:nth-last-child(3) {
       margin-left: auto;
     }
   }
