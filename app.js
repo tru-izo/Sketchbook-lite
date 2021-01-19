@@ -2,6 +2,8 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let size = 10;
 let color = "black";
+let x;
+let y;
 
 function draw(x, y) {
   ctx.beginPath();
@@ -19,6 +21,3 @@ function drawLine(x1, y1, x2, y2) {
   ctx.lineWidth = size;
   ctx.stroke();
 }
-
-draw(100, 200);
-drawLine(300, 300, 300, 500);

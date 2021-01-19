@@ -19,14 +19,14 @@ body {
 
 canvas {
   //   background-color: #fff;
-  border: 1px solid #7272f1;
+  border: 1px solid #f7783d;
 }
 
 .tools {
   background-image: linear-gradient(
     to right,
-    rgb(139, 139, 248),
-    rgb(61, 61, 247)
+    #f8bc8b,
+    #f7783d
   );
   display: flex;
   width: 802px;
